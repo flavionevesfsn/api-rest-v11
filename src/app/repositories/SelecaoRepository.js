@@ -62,4 +62,4 @@ class SelecaoRepository {
 
 }
 
-export default new SelecaoRepository(25)
+export default new SelecaoRepository(20)
