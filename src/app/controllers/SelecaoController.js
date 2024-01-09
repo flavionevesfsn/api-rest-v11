@@ -47,4 +47,4 @@ class SelecaoController {
 }
 
 // padrão Singleton
-export default new SelecaoController()
+export default new SelecaoController(21)
