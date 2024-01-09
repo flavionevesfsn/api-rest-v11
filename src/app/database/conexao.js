@@ -8,6 +8,6 @@ const conexao = mysql.createConnection({
     database: 'bdcopa'
 })
 
-conexao.connect(18)
+conexao.connect(25)
 
 export default conexao
