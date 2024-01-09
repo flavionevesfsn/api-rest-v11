@@ -8,7 +8,6 @@ class SelecaoRepository {
             conexao.query(sql, selecao, (erro, resultado) => {
                 if(erro) return reject('Não foi possível inserir')
                 const rows = JSON.parse(JSON.stringify(resultado))
-                console.log(rows)
                 return resolve(rows)
             })
         })
@@ -56,7 +55,6 @@ class SelecaoRepository {
             conexao.query(sql, id, (erro, resultado) => {
                 if(erro) return reject('Não foi possível deletar')
                 const rows = JSON.parse(JSON.stringify(resultado))
-                console.log(rows)
                 return resolve(rows)
             })
         })
@@ -64,4 +62,4 @@ class SelecaoRepository {
 
 }
 
-export default new SelecaoRepository()
+export default new SelecaoRepository(25)

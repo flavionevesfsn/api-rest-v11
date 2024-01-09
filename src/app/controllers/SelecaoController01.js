@@ -27,7 +27,7 @@ class SelecaoController {
         const id = req.params.id
         const idExiste = await SelecaoRepository.findById(id)
         if(!idExiste) {
-            return res.status(404).json({Erro: 'Id não existe'})
+            return res.status(400).json({Erro: 'Id não existe'})
         }
         const selecao = req.body
         const row = await SelecaoRepository.update(selecao, id)
