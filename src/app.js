@@ -6,7 +6,7 @@ const app = express()
 // indicar para o express ler body com json
 app.use(express.json())
 
-// ROTAS
+// ROTAS 
 app.get('/selecoes', SelecaoController.index)
 app.get('/selecoes/:id', SelecaoController.show)
 app.post('/selecoes', SelecaoController.store)
